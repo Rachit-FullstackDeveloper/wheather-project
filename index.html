@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aura Weather Forecast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4C+X6liVxCK9WJx7yzY5D5Ip7NB+QIMZ3e3j9r3luDd62i1zt+jnIoK1ME2HpLm56OmsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle" class="theme-toggle" title="Toggle Theme"><img src="night-mode.png" alt=""></button>
+
+        <header>
+            <h1>Aura Weather Forecast</h1>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn">Search</button>
+            </div>
+        </header>
+
+        <div id="error-message" class="error-message"></div>
+
+        <main>
+            <section class="weather-current glass" id="weather-current">
+            </section>
+
+<section class="weather-forecast glass">
+    <div class="chart-container">
+        <canvas id="forecastChart"></canvas>
+    </div>
+    <div class="forecast-cards" id="forecastCards">
+    </div>
+</section>
+
+        </main>
+        <footer>
+            <p>© 2025 Aura Weather Forecast</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
